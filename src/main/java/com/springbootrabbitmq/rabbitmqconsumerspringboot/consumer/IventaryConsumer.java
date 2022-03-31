@@ -1,7 +1,8 @@
 package com.springbootrabbitmq.rabbitmqconsumerspringboot.consumer;
 
-import com.springbootrabbitmq.rabbitmqconsumerspringboot.constants.RabbitmqConstants;
-import com.springbootrabbitmq.rabbitmqconsumerspringboot.dto.IventaryDto;
+
+import constants.RabbitmqConstants;
+import dto.IventaryDto;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
