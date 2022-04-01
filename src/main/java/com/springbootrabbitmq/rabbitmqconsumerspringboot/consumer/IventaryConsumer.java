@@ -10,12 +10,11 @@ import org.springframework.stereotype.Component;
 public class IventaryConsumer {
 
 
-
     @RabbitListener(queues = RabbitmqConstants.QUEUE_INVENTORY)
     private void consumer(IventaryDto iventaryDto) {
-    System.out.println(iventaryDto.productCode);
-    System.out.println(iventaryDto.quantity);
-    System.out.println("------------------------");
+        System.out.println("Product code: " + iventaryDto.productCode);
+        System.out.println("Quantity: " + iventaryDto.quantity);
+        System.out.println("------------------------");
     }
 
 
